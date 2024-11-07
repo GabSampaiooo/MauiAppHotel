@@ -34,6 +34,11 @@
                    
         </Frame>
 
-
+        <Button Text="Voltar" 
+        BackgroundColor="darkred"
+        Clicked="Button_Clicked" 
+        Margin="10" 
+        />
+        
     </VerticalStackLayout>
 </ContentPage>
