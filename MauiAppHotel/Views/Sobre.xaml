@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="#B60F46" Offset="0.0" />
+            <GradientStop Color="#D592FF" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10">
+        <Frame BackgroundColor="#B60F46"
+               Padding="10">
+
+            <Label Text="Sobre Nós:" 
+               TextColor="White"
+               FontFamily="NotoRegular"
+               HorizontalTextAlignment="Center"
+               FontSize="50" /> 
+            
+        </Frame>
+
+        <Frame BackgroundColor="#B60F46"
+               Padding="10">
+            <Label Text="Desenvolvedor: Gabriel Sampaio de Oliveira &#x0a;Desenvolvido em: 31/10/2024&#x0a; O foco desse projeto é desenvolver um app de contratação de hospedagem."
+                   TextColor="White" 
+                   HorizontalTextAlignment="Center"
+                   FontFamily=""/>
+                   
+        </Frame>
+
+
+    </VerticalStackLayout>
+</ContentPage>
