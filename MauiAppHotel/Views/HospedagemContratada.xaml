@@ -75,5 +75,10 @@
                 Clicked="Button_Clicked" 
                 Margin="10" />
 
+        <Button Text="Página Inicial" 
+                BackgroundColor="darkred"
+                Clicked="Button_Clicked_1"
+                Margin="10" />
+
     </VerticalStackLayout>
 </ContentPage>
