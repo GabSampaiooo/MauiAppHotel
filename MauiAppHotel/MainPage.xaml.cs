@@ -1,4 +1,6 @@
-﻿namespace MauiAppHotel
+﻿using MauiAppHotel.Views;
+
+namespace MauiAppHotel
 {
     public partial class MainPage : ContentPage
     {
@@ -9,16 +11,28 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void Button_Clicked(object sender, EventArgs e)
         {
-            count++;
+            try
+            {
+                await Navigation.PushAsync(new ContratacaoHospedagem());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void Button_Clicked_1(object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new Sobre());
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
         }
     }
 

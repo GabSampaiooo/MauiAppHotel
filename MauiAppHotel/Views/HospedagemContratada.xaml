@@ -20,49 +20,60 @@
                FontSize="50"
                HorizontalTextAlignment="Center"/>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#B60F46">
             <HorizontalStackLayout>
                 
                 <HorizontalStackLayout>
-                    <Label Text="Adultos: "/>
+                    <Label Text="Adultos: "
+                           TextColor="white"
+                           Margin="5"/>
                     <Label Text="2" 
-                           TextColor="Black"/>
+                           TextColor="White"
+                           Margin="5"/>
                 </HorizontalStackLayout>
 
                 <HorizontalStackLayout>
-                    <Label Text="Crianças: "/>
+                    <Label Text="Crianças: "
+                           TextColor="white"
+                           Margin="5"/>
                     <Label Text="1" 
-                           TextColor="Black"/>
+                           TextColor="White"
+                           Margin="5"/>
                 </HorizontalStackLayout>
 
             </HorizontalStackLayout>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#B60F46">
             <Grid ColumnDefinitions="*, *, *"
                   RowDefinitions="Auto, Auto">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" TextColor="White"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="White"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="White"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" TextColor="White"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" TextColor="White"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="White"/>
 
             </Grid>
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10"
+               BackgroundColor="#B60F46">
             <HorizontalStackLayout>
-                <Label Text="Valor Total:"/>
-                <Label Text="R$ 750,00"/>
+                <Label Text="Valor Total:"
+                       TextColor="White"/>
+                <Label Text="R$ 750,00" 
+                       TextColor="White"/>
             </HorizontalStackLayout>
         </Frame>
 
         <Button Text="Voltar" 
-        BackgroundColor="darkred"
-        Clicked="Button_Clicked" 
-        Margin="10"/>
+                BackgroundColor="darkred"
+                Clicked="Button_Clicked" 
+                Margin="10" />
 
     </VerticalStackLayout>
 </ContentPage>
