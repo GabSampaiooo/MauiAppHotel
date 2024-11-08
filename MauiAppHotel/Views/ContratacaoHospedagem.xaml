@@ -107,7 +107,7 @@
 
                 <Button Text="Avançar" 
                         BackgroundColor="darkred"
-                        Clicked="Button_Clicked" 
+                        Clicked="Button_Clicked"
                         Margin="10" />
 
                 <Button Text="Página Inicial" 
