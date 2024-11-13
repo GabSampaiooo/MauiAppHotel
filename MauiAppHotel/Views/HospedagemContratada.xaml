@@ -14,7 +14,7 @@
 
     <VerticalStackLayout VerticalOptions="CenterAndExpand">
 
-        <Label Text="Suíte Super Luxo"
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
                TextColor="White"
                FontFamily="NotoRegular"
                FontSize="50"
@@ -28,7 +28,7 @@
                     <Label Text="Adultos: "
                            TextColor="white"
                            Margin="5"/>
-                    <Label Text="2" 
+                    <Label Text="{Binding QntAdultos}" 
                            TextColor="White"
                            Margin="5"/>
                 </HorizontalStackLayout>
@@ -37,7 +37,7 @@
                     <Label Text="Crianças: "
                            TextColor="white"
                            Margin="5"/>
-                    <Label Text="1" 
+                    <Label Text="{Binding QntCriancas}" 
                            TextColor="White"
                            Margin="5"/>
                 </HorizontalStackLayout>
@@ -53,9 +53,9 @@
                 <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" TextColor="White"/>
                 <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" TextColor="White"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="27/05/2024" TextColor="White"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="30/05/2024" TextColor="White"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="3" TextColor="White"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="White"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" TextColor="White"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" TextColor="White"/>
 
             </Grid>
         </Frame>
@@ -65,7 +65,7 @@
             <HorizontalStackLayout>
                 <Label Text="Valor Total:"
                        TextColor="White"/>
-                <Label Text="R$ 750,00" 
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" 
                        TextColor="White"/>
             </HorizontalStackLayout>
         </Frame>
